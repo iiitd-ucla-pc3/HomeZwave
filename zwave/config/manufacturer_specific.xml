@@ -139,7 +139,7 @@
 	<Manufacturer id="0085" name="Fakro">
 	</Manufacturer>
 	<Manufacturer id="010f" name="FIBARO System">
-	  <Product type="0501" id="0102" name="FGBS001 Universal Binary Sensor" config="fibaro/fgbs001.xml" />
+	  <Product type="0501" id="0102" name="FGBS001 Universal Binary Sensor" />
 	  <Product type="0100" id="0104" name="FGD211 Universal Dimmer 500W" />
 	  <Product type="0100" id="0107" name="FGD211 Universal Dimmer 500W" config="fibaro/fgd211.xml" />
 	  <Product type="0300" id="0106" name="FGR221 Roller Shutter Controller" />
@@ -289,7 +289,6 @@
 	<Manufacturer id="0041" name="OpenPeak Inc.">
 	</Manufacturer>
 	<Manufacturer id="0064" name="Popp / Duwi">
-	  <Product type="1001" id="0000" name="Plugin Dimmer" />
 	  <Product type="3001" id="0000" name="Plugin Switch" />
 	</Manufacturer>
 	<Manufacturer id="0016" name="PowerLynx">

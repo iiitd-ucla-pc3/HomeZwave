@@ -1,1 +1,1 @@
-char ozw_vers[] = "OpenZWave version 1.0.580M";
+char ozw_vers[] = "OpenZWave version 1.0.Unversioned directory";
