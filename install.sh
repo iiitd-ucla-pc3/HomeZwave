@@ -1,5 +1,10 @@
 #!/bin/bash
 #Install MYSQL Server
+apt-get install python-pip
+easy_install python-pip
+pip install mechanize
+pip install pytz
+easy_install mysql-python
 mysql_pass=password
 export DEBIAN_FRONTEND=noninteractive 
 echo mysql-server mysql-server/root_password select $mysql_pass  | debconf-set-selections
