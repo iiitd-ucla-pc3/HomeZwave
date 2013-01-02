@@ -1,12 +1,16 @@
 current=0
-while(1)
-{
+while true
+do
 	hour=$(date +"%_H")
-	echo "Current Hour : $hour"
 	previous=$current
 	current=$hour
 	if [ $current != $previous ]
-		then python dropbox_upload.py
-	fi
+		then 
 
-}
+			python create_csv.py
+			sleep 10
+			python dropbox_upload.py
+			sleep 10
+		
+	fi
+done

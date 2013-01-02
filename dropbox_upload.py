@@ -18,7 +18,7 @@ password=db_password.password
 now=datetime.datetime.now(timezone('Asia/Kolkata'))
 
 BASE_UPLOAD_PATH="/SmartMeter/GroundTruth/Amarjeet/"
-DATA_BASE_PATH="/tmp/data/"
+DATA_BASE_PATH="/root/data/"
 BASE_PATH=str(now.day)+"_"+str(now.month)+str("/")
 FILENAME=str(now.hour)+".csv"
 
