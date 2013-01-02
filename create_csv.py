@@ -22,7 +22,7 @@ FILENAME=BASE_PATH+str(now.hour)+".csv"
 
 print BASE_PATH
 print FILENAME
-
+#Connecting Database and Create CSV
 db = MySQLdb.connect(host="localhost", user="root", passwd="password", db="home")
 dump_writer = csv.writer(open(FILENAME,'w'), delimiter=',',quotechar="'")
 cursor = db.cursor()
