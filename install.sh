@@ -5,11 +5,12 @@ apt-get install python-pip
 pip install python-pip
 pip install mechanize
 pip install pytz
-pip install mysql-python
+apt-get install python-mysqldb
 apt-get install make
 apt-get install g++
 apt-get install libmysqlcppconn-dev
 apt-get install libboost-dev
+apt-get install libudev-dev
 #Install MYSQL Server
 mysql_pass=password
 export DEBIAN_FRONTEND=noninteractive 
