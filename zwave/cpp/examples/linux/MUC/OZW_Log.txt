@@ -1,0 +1,950 @@
+2013-01-04 15:19:57:965 mgr,     Added driver for controller /dev/ttyUSB1
+2013-01-04 15:19:57:965   Opening controller /dev/ttyUSB1
+2013-01-04 15:19:57:965 Trying to open serial port /dev/ttyUSB1 (attempt 1)
+2013-01-04 15:19:57:973 Serial port /dev/ttyUSB1 opened (attempt 1)
+2013-01-04 15:19:57:977 contrlr, Queuing command: FUNC_ID_ZW_GET_VERSION: 0x01, 0x03, 0x00, 0x15, 0xe9
+2013-01-04 15:19:57:977 contrlr, Queuing command: FUNC_ID_ZW_MEMORY_GET_ID: 0x01, 0x03, 0x00, 0x20, 0xdc
+2013-01-04 15:19:57:977 contrlr, Queuing command: FUNC_ID_ZW_GET_CONTROLLER_CAPABILITIES: 0x01, 0x03, 0x00, 0x05, 0xf9
+2013-01-04 15:19:57:978 contrlr, Queuing command: FUNC_ID_SERIAL_API_GET_CAPABILITIES: 0x01, 0x03, 0x00, 0x07, 0xfb
+2013-01-04 15:19:57:978 contrlr, Queuing command: FUNC_ID_ZW_GET_SUC_NODE_ID: 0x01, 0x03, 0x00, 0x56, 0xaa
+2013-01-04 15:19:57:978 contrlr, WriteMsg WriteNextMsg m_currentMsg=b6e009f0
+2013-01-04 15:19:57:978 
+2013-01-04 15:19:57:978 contrlr, Sending command (Callback ID=0x00, Expected Reply=0x15) - FUNC_ID_ZW_GET_VERSION: 0x01, 0x03, 0x00, 0x15, 0xe9
+2013-01-04 15:19:57:979 Unsolicited message received while waiting for ACK.
+2013-01-04 15:19:57:979 Node004,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x04, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x11, 0x00, 0x00, 0xeb
+2013-01-04 15:19:57:979 
+2013-01-04 15:19:57:980 contrlr, CAN received...triggering resend
+2013-01-04 15:19:57:980 contrlr, WriteMsg CAN m_currentMsg=b6e009f0
+2013-01-04 15:19:57:980 
+2013-01-04 15:19:57:980 contrlr, Sending command (Attempt 2, Callback ID=0x00, Expected Reply=0x15) - FUNC_ID_ZW_GET_VERSION: 0x01, 0x03, 0x00, 0x15, 0xe9
+2013-01-04 15:19:57:984 contrlr,   ACK received CallbackId 0x00 Reply 0x15
+2013-01-04 15:19:57:984 contrlr,   Received: 0x01, 0x10, 0x01, 0x15, 0x5a, 0x2d, 0x57, 0x61, 0x76, 0x65, 0x20, 0x32, 0x2e, 0x37, 0x38, 0x00, 0x01, 0x9b
+2013-01-04 15:19:57:984 
+2013-01-04 15:19:57:984 contrlr, Received reply to FUNC_ID_ZW_GET_VERSION:
+2013-01-04 15:19:57:984 contrlr,     Static Controller library, version Z-Wave 2.78
+2013-01-04 15:19:57:984 contrlr,   Expected reply was received
+2013-01-04 15:19:57:984 contrlr,   Message transaction complete
+2013-01-04 15:19:57:984 
+2013-01-04 15:19:57:984 contrlr, WriteMsg WriteNextMsg m_currentMsg=b6e00c30
+2013-01-04 15:19:57:984 
+2013-01-04 15:19:57:985 contrlr, Sending command (Callback ID=0x00, Expected Reply=0x20) - FUNC_ID_ZW_MEMORY_GET_ID: 0x01, 0x03, 0x00, 0x20, 0xdc
+2013-01-04 15:19:57:986 contrlr,   ACK received CallbackId 0x00 Reply 0x20
+2013-01-04 15:19:57:988 contrlr,   Received: 0x01, 0x08, 0x01, 0x20, 0x01, 0x61, 0xd5, 0xe9, 0x01, 0x8b
+2013-01-04 15:19:57:988 
+2013-01-04 15:19:57:988 contrlr, Received reply to FUNC_ID_ZW_MEMORY_GET_ID. Home ID = 0x0161d5e9.  Our node ID = 1
+2013-01-04 15:19:57:989 contrlr,   Expected reply was received
+2013-01-04 15:19:57:989 contrlr,   Message transaction complete
+2013-01-04 15:19:57:989 
+2013-01-04 15:19:57:989 contrlr, WriteMsg WriteNextMsg m_currentMsg=b6e00e40
+2013-01-04 15:19:57:989 
+2013-01-04 15:19:57:989 contrlr, Sending command (Callback ID=0x00, Expected Reply=0x05) - FUNC_ID_ZW_GET_CONTROLLER_CAPABILITIES: 0x01, 0x03, 0x00, 0x05, 0xf9
+2013-01-04 15:19:57:991 contrlr,   ACK received CallbackId 0x00 Reply 0x05
+2013-01-04 15:19:57:991 contrlr,   Received: 0x01, 0x04, 0x01, 0x05, 0x08, 0xf7
+2013-01-04 15:19:57:991 
+2013-01-04 15:19:57:991 contrlr, Received reply to FUNC_ID_ZW_GET_CONTROLLER_CAPABILITIES:
+2013-01-04 15:19:57:991 contrlr,     There is no SUC ID Server (SIS) in this network.
+2013-01-04 15:19:57:991 contrlr,     The PC controller is a primary controller.
+2013-01-04 15:19:57:991 contrlr,   Expected reply was received
+2013-01-04 15:19:57:991 contrlr,   Message transaction complete
+2013-01-04 15:19:57:991 
+2013-01-04 15:19:57:991 contrlr, WriteMsg WriteNextMsg m_currentMsg=b6e00fe0
+2013-01-04 15:19:57:991 
+2013-01-04 15:19:57:991 contrlr, Sending command (Callback ID=0x00, Expected Reply=0x07) - FUNC_ID_SERIAL_API_GET_CAPABILITIES: 0x01, 0x03, 0x00, 0x07, 0xfb
+2013-01-04 15:19:57:998 contrlr,   ACK received CallbackId 0x00 Reply 0x07
+2013-01-04 15:19:57:998 contrlr,   Received: 0x01, 0x2b, 0x01, 0x07, 0x03, 0x07, 0x00, 0x86, 0x00, 0x02, 0x00, 0x01, 0xfe, 0x80, 0xfe, 0x88, 0x0f, 0x00, 0x00, 0x00, 0xfb, 0x97, 0x7f, 0x82, 0x07, 0x00, 0x00, 0x80, 0x00, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xc2
+2013-01-04 15:19:57:999 
+2013-01-04 15:19:57:999 contrlr,  Received reply to FUNC_ID_SERIAL_API_GET_CAPABILITIES
+2013-01-04 15:19:57:999 contrlr,     Serial API Version:   3.7
+2013-01-04 15:19:57:999 contrlr,     Manufacturer ID:      0x0086
+2013-01-04 15:19:57:999 contrlr,     Product Type:         0x0002
+2013-01-04 15:19:57:999 contrlr,     Product ID:           0x0001
+2013-01-04 15:19:57:999 contrlr, Queuing command: FUNC_ID_ZW_GET_RANDOM: 0x01, 0x04, 0x00, 0x1c, 0x20, 0xc7
+2013-01-04 15:19:57:999 contrlr, Queuing command: FUNC_ID_SERIAL_API_GET_INIT_DATA: 0x01, 0x03, 0x00, 0x02, 0xfe
+2013-01-04 15:19:57:999 contrlr,   Expected reply was received
+2013-01-04 15:19:57:999 contrlr,   Message transaction complete
+2013-01-04 15:19:57:999 
+2013-01-04 15:19:58:000 contrlr, WriteMsg WriteNextMsg m_currentMsg=b6e011e8
+2013-01-04 15:19:58:000 
+2013-01-04 15:19:58:000 contrlr, Sending command (Callback ID=0x00, Expected Reply=0x56) - FUNC_ID_ZW_GET_SUC_NODE_ID: 0x01, 0x03, 0x00, 0x56, 0xaa
+2013-01-04 15:19:58:003 contrlr,   ACK received CallbackId 0x00 Reply 0x56
+2013-01-04 15:19:58:004 contrlr,   Received: 0x01, 0x04, 0x01, 0x56, 0x00, 0xac
+2013-01-04 15:19:58:004 
+2013-01-04 15:19:58:004 contrlr, Received reply to GET_SUC_NODE_ID.  Node ID = 0
+2013-01-04 15:19:58:004 contrlr,   Expected reply was received
+2013-01-04 15:19:58:004 contrlr,   Message transaction complete
+2013-01-04 15:19:58:004 
+2013-01-04 15:19:58:004 contrlr, WriteMsg WriteNextMsg m_currentMsg=b6e009f0
+2013-01-04 15:19:58:005 
+2013-01-04 15:19:58:005 contrlr, Sending command (Callback ID=0x00, Expected Reply=0x1c) - FUNC_ID_ZW_GET_RANDOM: 0x01, 0x04, 0x00, 0x1c, 0x20, 0xc7
+2013-01-04 15:19:58:007 contrlr,   ACK received CallbackId 0x00 Reply 0x1c
+2013-01-04 15:19:58:058 contrlr,   Received: 0x01, 0x25, 0x01, 0x1c, 0x01, 0x20, 0x0a, 0x1a, 0x7f, 0x66, 0x59, 0x05, 0x93, 0x0a, 0x85, 0x5d, 0xbd, 0xd0, 0xf7, 0xa2, 0xc8, 0x8b, 0xc7, 0xf8, 0x2a, 0xc7, 0xd1, 0x5a, 0x50, 0x54, 0x01, 0xfb, 0xa7, 0xd5, 0x4d, 0x7e, 0x53, 0x92, 0xae
+2013-01-04 15:19:58:058 
+2013-01-04 15:19:58:058 contrlr, Received reply to FUNC_ID_ZW_GET_RANDOM: true
+2013-01-04 15:19:58:058 contrlr,   Expected reply was received
+2013-01-04 15:19:58:058 contrlr,   Message transaction complete
+2013-01-04 15:19:58:059 
+2013-01-04 15:19:58:059 contrlr, WriteMsg WriteNextMsg m_currentMsg=b6e01e18
+2013-01-04 15:19:58:059 
+2013-01-04 15:19:58:059 contrlr, Sending command (Callback ID=0x00, Expected Reply=0x02) - FUNC_ID_SERIAL_API_GET_INIT_DATA: 0x01, 0x03, 0x00, 0x02, 0xfe
+2013-01-04 15:19:58:061 contrlr,   ACK received CallbackId 0x00 Reply 0x02
+2013-01-04 15:19:58:108 contrlr,   Received: 0x01, 0x25, 0x01, 0x02, 0x05, 0x00, 0x1d, 0x7f, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x03, 0x01, 0xbc
+2013-01-04 15:19:58:108 
+2013-01-04 15:19:58:108 mgr,     Driver with Home ID of 0x0161d5e9 is now ready.
+2013-01-04 15:19:58:109 
+2013-01-04 15:19:58:109 contrlr, Received reply to FUNC_ID_SERIAL_API_GET_INIT_DATA:
+2013-01-04 15:19:58:109 contrlr,     Node 001 - New
+2013-01-04 15:19:58:109 Node001, QueryStage_ProtocolInfo
+2013-01-04 15:19:58:109 Node001, Queuing command: Get Node Protocol Info (Node=1): 0x01, 0x04, 0x00, 0x41, 0x01, 0xbb
+2013-01-04 15:19:58:109 Node001, Queuing Command: Query Stage Complete (ProtocolInfo)
+2013-01-04 15:19:58:109 contrlr,     Node 002 - New
+2013-01-04 15:19:58:109 Node002, QueryStage_ProtocolInfo
+2013-01-04 15:19:58:109 Node002, Queuing command: Get Node Protocol Info (Node=2): 0x01, 0x04, 0x00, 0x41, 0x02, 0xb8
+2013-01-04 15:19:58:109 Node002, Queuing Command: Query Stage Complete (ProtocolInfo)
+2013-01-04 15:19:58:109 contrlr,     Node 003 - New
+2013-01-04 15:19:58:109 Node003, QueryStage_ProtocolInfo
+2013-01-04 15:19:58:110 Node003, Queuing command: Get Node Protocol Info (Node=3): 0x01, 0x04, 0x00, 0x41, 0x03, 0xb9
+2013-01-04 15:19:58:110 Node003, Queuing Command: Query Stage Complete (ProtocolInfo)
+2013-01-04 15:19:58:110 contrlr,     Node 004 - New
+2013-01-04 15:19:58:110 Node004, QueryStage_ProtocolInfo
+2013-01-04 15:19:58:110 Node004, Queuing command: Get Node Protocol Info (Node=4): 0x01, 0x04, 0x00, 0x41, 0x04, 0xbe
+2013-01-04 15:19:58:110 Node004, Queuing Command: Query Stage Complete (ProtocolInfo)
+2013-01-04 15:19:58:110 contrlr,     Node 005 - New
+2013-01-04 15:19:58:110 Node005, QueryStage_ProtocolInfo
+2013-01-04 15:19:58:110 Node005, Queuing command: Get Node Protocol Info (Node=5): 0x01, 0x04, 0x00, 0x41, 0x05, 0xbf
+2013-01-04 15:19:58:110 Node005, Queuing Command: Query Stage Complete (ProtocolInfo)
+2013-01-04 15:19:58:110 contrlr,     Node 006 - New
+2013-01-04 15:19:58:110 Node006, QueryStage_ProtocolInfo
+2013-01-04 15:19:58:111 Node006, Queuing command: Get Node Protocol Info (Node=6): 0x01, 0x04, 0x00, 0x41, 0x06, 0xbc
+2013-01-04 15:19:58:111 Node006, Queuing Command: Query Stage Complete (ProtocolInfo)
+2013-01-04 15:19:58:111 contrlr,     Node 007 - New
+2013-01-04 15:19:58:111 Node007, QueryStage_ProtocolInfo
+2013-01-04 15:19:58:111 Node007, Queuing command: Get Node Protocol Info (Node=7): 0x01, 0x04, 0x00, 0x41, 0x07, 0xbd
+2013-01-04 15:19:58:111 Node007, Queuing Command: Query Stage Complete (ProtocolInfo)
+2013-01-04 15:19:58:111 contrlr,   Expected reply was received
+2013-01-04 15:19:58:111 contrlr,   Message transaction complete
+2013-01-04 15:19:58:111 
+2013-01-04 15:20:05:113 Node003,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x03, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x04, 0x00, 0x00, 0xf9
+2013-01-04 15:20:05:113 
+2013-01-04 15:20:05:113 Node003, ApplicationCommandHandler - Unhandled Command Class 0x32
+2013-01-04 15:20:05:114 Node003,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x03, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x04, 0x00, 0x00, 0xf9
+2013-01-04 15:20:05:114 
+2013-01-04 15:20:05:114 Node003, ApplicationCommandHandler - Unhandled Command Class 0x32
+2013-01-04 15:20:05:114 Node003,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x03, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x04, 0x00, 0x00, 0xf9
+2013-01-04 15:20:05:114 
+2013-01-04 15:20:05:114 Node003, ApplicationCommandHandler - Unhandled Command Class 0x32
+2013-01-04 15:20:05:115 Node003,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x03, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x04, 0x00, 0x00, 0xf9
+2013-01-04 15:20:05:115 
+2013-01-04 15:20:05:115 Node003, ApplicationCommandHandler - Unhandled Command Class 0x32
+2013-01-04 15:20:05:115 Node001, WriteMsg WriteNextMsg m_currentMsg=b6e022e0
+2013-01-04 15:20:05:115 
+2013-01-04 15:20:05:115 Node001, Sending command (Callback ID=0x00, Expected Reply=0x41) - Get Node Protocol Info (Node=1): 0x01, 0x04, 0x00, 0x41, 0x01, 0xbb
+2013-01-04 15:20:05:120 Unsolicited message received while waiting for ACK.
+2013-01-04 15:20:05:120 Node005,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x05, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x00, 0x00, 0x00, 0xfb
+2013-01-04 15:20:05:120 
+2013-01-04 15:20:05:120 Node005, ApplicationCommandHandler - Unhandled Command Class 0x32
+2013-01-04 15:20:05:120 Unsolicited message received while waiting for ACK.
+2013-01-04 15:20:05:121 Node003,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x03, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x04, 0x00, 0x00, 0xf9
+2013-01-04 15:20:05:121 
+2013-01-04 15:20:05:121 Node003, ApplicationCommandHandler - Unhandled Command Class 0x32
+2013-01-04 15:20:05:121 Unsolicited message received while waiting for ACK.
+2013-01-04 15:20:05:121 Node006,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x06, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x00, 0x00, 0x00, 0xf8
+2013-01-04 15:20:05:121 
+2013-01-04 15:20:05:121 Node006, ApplicationCommandHandler - Unhandled Command Class 0x32
+2013-01-04 15:20:05:122 Node001,   ACK received CallbackId 0x00 Reply 0x41
+2013-01-04 15:20:05:122 Node001,   Received: 0x01, 0x09, 0x01, 0x41, 0x92, 0x16, 0x00, 0x02, 0x02, 0x01, 0x33
+2013-01-04 15:20:05:122 
+2013-01-04 15:20:05:122 Node001, Received reply to FUNC_ID_ZW_GET_NODE_PROTOCOL_INFO
+2013-01-04 15:20:05:122 Node001,   Protocol Info for Node 1:
+2013-01-04 15:20:05:122 Node001,     Listening     = true
+2013-01-04 15:20:05:122 Node001,     Beaming       = true
+2013-01-04 15:20:05:122 Node001,     Routing       = false
+2013-01-04 15:20:05:123 Node001,     Max Baud Rate = 40000
+2013-01-04 15:20:05:123 Node001,     Version       = 3
+2013-01-04 15:20:05:123 Node001,     Security      = false
+2013-01-04 15:20:05:126 Node001,   Basic device class    (0x02) - Static Controller
+2013-01-04 15:20:05:126 Node001,   Generic device Class  (0x02) - Static Controller
+2013-01-04 15:20:05:126 Node001,   Specific device class (0x01) - Static PC Controller
+2013-01-04 15:20:05:126 Node001,   Mandatory Command Classes for Node 1:
+2013-01-04 15:20:05:126 Node001,     None
+2013-01-04 15:20:05:126 Node001,   Mandatory Command Classes controlled by Node 1:
+2013-01-04 15:20:05:126 Node001,     COMMAND_CLASS_BASIC
+2013-01-04 15:20:05:126 Driver::ReadButtons - zwbutton.xml file not found.
+2013-01-04 15:20:05:127 Node001,   Expected reply was received
+2013-01-04 15:20:05:127 Node001,   Message transaction complete
+2013-01-04 15:20:05:127 
+2013-01-04 15:20:05:127 Node001, Query Stage Complete (ProtocolInfo)
+2013-01-04 15:20:05:127 Node001, QueryStage_WakeUp
+2013-01-04 15:20:05:127 Node001, QueryStage_ManufacturerSpecific1
+2013-01-04 15:20:05:133 Node001, QueryStage_ManufacturerSpecific2
+2013-01-04 15:20:05:133 Node001, QueryStage_Versions
+2013-01-04 15:20:05:133 Node001, QueryStage_Instances
+2013-01-04 15:20:05:133 Node001, Essential node queries are complete
+2013-01-04 15:20:05:133 Node001, QueryStage_Static
+2013-01-04 15:20:05:134 Node001, QueryStage_Associations
+2013-01-04 15:20:05:134 Node001, QueryStage_Neighbors
+2013-01-04 15:20:05:134 Requesting routing info (neighbor list) for Node 1
+2013-01-04 15:20:05:134 Node001, Queuing command: Get Routing Info (Node=1): 0x01, 0x06, 0x00, 0x80, 0x01, 0x01, 0x01, 0x78
+2013-01-04 15:20:05:134 Node001, Queuing Command: Query Stage Complete (Neighbors)
+2013-01-04 15:20:05:134 Node001, WriteMsg WriteNextMsg m_currentMsg=b6e228a0
+2013-01-04 15:20:05:134 
+2013-01-04 15:20:05:134 Node001, Sending command (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=1): 0x01, 0x06, 0x00, 0x80, 0x01, 0x01, 0x01, 0x78
+2013-01-04 15:20:05:136 Node001,   ACK received CallbackId 0x00 Reply 0x80
+2013-01-04 15:20:05:140 Node001,   Received: 0x01, 0x20, 0x01, 0x80, 0x7e, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x20
+2013-01-04 15:20:05:140 
+2013-01-04 15:20:05:140 Node001, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2013-01-04 15:20:05:140 Node001,     Neighbors of this node are:
+2013-01-04 15:20:05:140 Node001,     Node 2
+2013-01-04 15:20:05:140 Node001,     Node 3
+2013-01-04 15:20:05:140 Node001,     Node 4
+2013-01-04 15:20:05:140 Node001,     Node 5
+2013-01-04 15:20:05:140 Node001,     Node 6
+2013-01-04 15:20:05:140 Node001,     Node 7
+2013-01-04 15:20:05:141 Node001,   Expected reply was received
+2013-01-04 15:20:05:141 Node001,   Message transaction complete
+2013-01-04 15:20:05:141 
+2013-01-04 15:20:05:141 Node002, WriteMsg WriteNextMsg m_currentMsg=b6e013f8
+2013-01-04 15:20:05:141 
+2013-01-04 15:20:05:141 Node002, Sending command (Callback ID=0x00, Expected Reply=0x41) - Get Node Protocol Info (Node=2): 0x01, 0x04, 0x00, 0x41, 0x02, 0xb8
+2013-01-04 15:20:05:143 Node002,   ACK received CallbackId 0x00 Reply 0x41
+2013-01-04 15:20:05:144 Node002,   Received: 0x01, 0x09, 0x01, 0x41, 0xd2, 0x9c, 0x00, 0x04, 0x10, 0x01, 0xed
+2013-01-04 15:20:05:144 
+2013-01-04 15:20:05:144 Node002, Received reply to FUNC_ID_ZW_GET_NODE_PROTOCOL_INFO
+2013-01-04 15:20:05:144 Node002,   Protocol Info for Node 2:
+2013-01-04 15:20:05:144 Node002,     Listening     = true
+2013-01-04 15:20:05:144 Node002,     Beaming       = true
+2013-01-04 15:20:05:144 Node002,     Routing       = true
+2013-01-04 15:20:05:144 Node002,     Max Baud Rate = 40000
+2013-01-04 15:20:05:144 Node002,     Version       = 3
+2013-01-04 15:20:05:144 Node002,     Security      = false
+2013-01-04 15:20:05:144 Node002,   Basic device class    (0x04) - Routing Slave
+2013-01-04 15:20:05:144 Node002,   Generic device Class  (0x10) - Binary Switch
+2013-01-04 15:20:05:145 Node002,   Specific device class (0x01) - Binary Power Switch
+2013-01-04 15:20:05:145 Node002,     COMMAND_CLASS_BASIC will be mapped to COMMAND_CLASS_SWITCH_BINARY
+2013-01-04 15:20:05:145 Node002,   Mandatory Command Classes for Node 2:
+2013-01-04 15:20:05:145 Node002,     COMMAND_CLASS_BASIC
+2013-01-04 15:20:05:145 Node002,     COMMAND_CLASS_SWITCH_BINARY
+2013-01-04 15:20:05:145 Node002,     COMMAND_CLASS_SWITCH_ALL
+2013-01-04 15:20:05:145 Node002,   Mandatory Command Classes controlled by Node 2:
+2013-01-04 15:20:05:145 Node002,     None
+2013-01-04 15:20:05:145 Node002,   Expected reply was received
+2013-01-04 15:20:05:145 Node002,   Message transaction complete
+2013-01-04 15:20:05:145 
+2013-01-04 15:20:05:145 Node002, Query Stage Complete (ProtocolInfo)
+2013-01-04 15:20:05:145 Node002, QueryStage_WakeUp
+2013-01-04 15:20:05:145 Node002, QueryStage_ManufacturerSpecific1
+2013-01-04 15:20:05:145 Node002, QueryStage_NodeInfo
+2013-01-04 15:20:05:145 Node002, Queuing command: Request Node Info (Node=2): 0x01, 0x04, 0x00, 0x60, 0x02, 0x99
+2013-01-04 15:20:05:146 Node002, Queuing Command: Query Stage Complete (NodeInfo)
+2013-01-04 15:20:05:146 Node003, WriteMsg WriteNextMsg m_currentMsg=b6e01808
+2013-01-04 15:20:05:146 
+2013-01-04 15:20:05:146 Node003, Sending command (Callback ID=0x00, Expected Reply=0x41) - Get Node Protocol Info (Node=3): 0x01, 0x04, 0x00, 0x41, 0x03, 0xb9
+2013-01-04 15:20:05:148 Node003,   ACK received CallbackId 0x00 Reply 0x41
+2013-01-04 15:20:05:149 Node003,   Received: 0x01, 0x09, 0x01, 0x41, 0xd2, 0x9c, 0x00, 0x04, 0x10, 0x01, 0xed
+2013-01-04 15:20:05:149 
+2013-01-04 15:20:05:149 Node003, Received reply to FUNC_ID_ZW_GET_NODE_PROTOCOL_INFO
+2013-01-04 15:20:05:149 Node003,   Protocol Info for Node 3:
+2013-01-04 15:20:05:149 Node003,     Listening     = true
+2013-01-04 15:20:05:149 Node003,     Beaming       = true
+2013-01-04 15:20:05:149 Node003,     Routing       = true
+2013-01-04 15:20:05:149 Node003,     Max Baud Rate = 40000
+2013-01-04 15:20:05:149 Node003,     Version       = 3
+2013-01-04 15:20:05:149 Node003,     Security      = false
+2013-01-04 15:20:05:149 Node003,   Basic device class    (0x04) - Routing Slave
+2013-01-04 15:20:05:149 Node003,   Generic device Class  (0x10) - Binary Switch
+2013-01-04 15:20:05:150 Node003,   Specific device class (0x01) - Binary Power Switch
+2013-01-04 15:20:05:150 Node003,     COMMAND_CLASS_BASIC will be mapped to COMMAND_CLASS_SWITCH_BINARY
+2013-01-04 15:20:05:150 Node003,   Mandatory Command Classes for Node 3:
+2013-01-04 15:20:05:150 Node003,     COMMAND_CLASS_BASIC
+2013-01-04 15:20:05:150 Node003,     COMMAND_CLASS_SWITCH_BINARY
+2013-01-04 15:20:05:150 Node003,     COMMAND_CLASS_SWITCH_ALL
+2013-01-04 15:20:05:150 Node003,   Mandatory Command Classes controlled by Node 3:
+2013-01-04 15:20:05:150 Node003,     None
+2013-01-04 15:20:05:150 Node003,   Expected reply was received
+2013-01-04 15:20:05:150 Node003,   Message transaction complete
+2013-01-04 15:20:05:150 
+2013-01-04 15:20:05:150 Node003, Query Stage Complete (ProtocolInfo)
+2013-01-04 15:20:05:150 Node003, QueryStage_WakeUp
+2013-01-04 15:20:05:150 Node003, QueryStage_ManufacturerSpecific1
+2013-01-04 15:20:05:150 Node003, QueryStage_NodeInfo
+2013-01-04 15:20:05:150 Node003, Queuing command: Request Node Info (Node=3): 0x01, 0x04, 0x00, 0x60, 0x03, 0x98
+2013-01-04 15:20:05:150 Node003, Queuing Command: Query Stage Complete (NodeInfo)
+2013-01-04 15:20:05:151 Node004, WriteMsg WriteNextMsg m_currentMsg=b6e02828
+2013-01-04 15:20:05:151 
+2013-01-04 15:20:05:151 Node004, Sending command (Callback ID=0x00, Expected Reply=0x41) - Get Node Protocol Info (Node=4): 0x01, 0x04, 0x00, 0x41, 0x04, 0xbe
+2013-01-04 15:20:05:153 Node004,   ACK received CallbackId 0x00 Reply 0x41
+2013-01-04 15:20:05:154 Node004,   Received: 0x01, 0x09, 0x01, 0x41, 0xd2, 0x9c, 0x00, 0x04, 0x10, 0x01, 0xed
+2013-01-04 15:20:05:154 
+2013-01-04 15:20:05:154 Node004, Received reply to FUNC_ID_ZW_GET_NODE_PROTOCOL_INFO
+2013-01-04 15:20:05:154 Node004,   Protocol Info for Node 4:
+2013-01-04 15:20:05:154 Node004,     Listening     = true
+2013-01-04 15:20:05:154 Node004,     Beaming       = true
+2013-01-04 15:20:05:154 Node004,     Routing       = true
+2013-01-04 15:20:05:154 Node004,     Max Baud Rate = 40000
+2013-01-04 15:20:05:154 Node004,     Version       = 3
+2013-01-04 15:20:05:155 Node004,     Security      = false
+2013-01-04 15:20:05:155 Node004,   Basic device class    (0x04) - Routing Slave
+2013-01-04 15:20:05:155 Node004,   Generic device Class  (0x10) - Binary Switch
+2013-01-04 15:20:05:155 Node004,   Specific device class (0x01) - Binary Power Switch
+2013-01-04 15:20:05:155 Node004,     COMMAND_CLASS_BASIC will be mapped to COMMAND_CLASS_SWITCH_BINARY
+2013-01-04 15:20:05:155 Node004,   Mandatory Command Classes for Node 4:
+2013-01-04 15:20:05:155 Node004,     COMMAND_CLASS_BASIC
+2013-01-04 15:20:05:155 Node004,     COMMAND_CLASS_SWITCH_BINARY
+2013-01-04 15:20:05:155 Node004,     COMMAND_CLASS_SWITCH_ALL
+2013-01-04 15:20:05:155 Node004,   Mandatory Command Classes controlled by Node 4:
+2013-01-04 15:20:05:156 Node004,     None
+2013-01-04 15:20:05:156 Node004,   Expected reply was received
+2013-01-04 15:20:05:156 Node004,   Message transaction complete
+2013-01-04 15:20:05:156 
+2013-01-04 15:20:05:156 Node004, Query Stage Complete (ProtocolInfo)
+2013-01-04 15:20:05:156 Node004, QueryStage_WakeUp
+2013-01-04 15:20:05:156 Node004, QueryStage_ManufacturerSpecific1
+2013-01-04 15:20:05:156 Node004, QueryStage_NodeInfo
+2013-01-04 15:20:05:156 Node004, Queuing command: Request Node Info (Node=4): 0x01, 0x04, 0x00, 0x60, 0x04, 0x9f
+2013-01-04 15:20:05:157 Node004, Queuing Command: Query Stage Complete (NodeInfo)
+2013-01-04 15:20:05:157 Node005, WriteMsg WriteNextMsg m_currentMsg=b6e02c80
+2013-01-04 15:20:05:157 
+2013-01-04 15:20:05:157 Node005, Sending command (Callback ID=0x00, Expected Reply=0x41) - Get Node Protocol Info (Node=5): 0x01, 0x04, 0x00, 0x41, 0x05, 0xbf
+2013-01-04 15:20:05:159 Node005,   ACK received CallbackId 0x00 Reply 0x41
+2013-01-04 15:20:05:160 Node005,   Received: 0x01, 0x09, 0x01, 0x41, 0xd2, 0x9c, 0x00, 0x04, 0x10, 0x01, 0xed
+2013-01-04 15:20:05:160 
+2013-01-04 15:20:05:160 Node005, Received reply to FUNC_ID_ZW_GET_NODE_PROTOCOL_INFO
+2013-01-04 15:20:05:160 Node005,   Protocol Info for Node 5:
+2013-01-04 15:20:05:160 Node005,     Listening     = true
+2013-01-04 15:20:05:161 Node005,     Beaming       = true
+2013-01-04 15:20:05:161 Node005,     Routing       = true
+2013-01-04 15:20:05:161 Node005,     Max Baud Rate = 40000
+2013-01-04 15:20:05:161 Node005,     Version       = 3
+2013-01-04 15:20:05:161 Node005,     Security      = false
+2013-01-04 15:20:05:161 Node005,   Basic device class    (0x04) - Routing Slave
+2013-01-04 15:20:05:161 Node005,   Generic device Class  (0x10) - Binary Switch
+2013-01-04 15:20:05:161 Node005,   Specific device class (0x01) - Binary Power Switch
+2013-01-04 15:20:05:161 Node005,     COMMAND_CLASS_BASIC will be mapped to COMMAND_CLASS_SWITCH_BINARY
+2013-01-04 15:20:05:162 Node005,   Mandatory Command Classes for Node 5:
+2013-01-04 15:20:05:162 Node005,     COMMAND_CLASS_BASIC
+2013-01-04 15:20:05:162 Node005,     COMMAND_CLASS_SWITCH_BINARY
+2013-01-04 15:20:05:162 Node005,     COMMAND_CLASS_SWITCH_ALL
+2013-01-04 15:20:05:162 Node005,   Mandatory Command Classes controlled by Node 5:
+2013-01-04 15:20:05:162 Node005,     None
+2013-01-04 15:20:05:162 Node005,   Expected reply was received
+2013-01-04 15:20:05:162 Node005,   Message transaction complete
+2013-01-04 15:20:05:162 
+2013-01-04 15:20:05:163 Node005, Query Stage Complete (ProtocolInfo)
+2013-01-04 15:20:05:163 Node005, QueryStage_WakeUp
+2013-01-04 15:20:05:163 Node005, QueryStage_ManufacturerSpecific1
+2013-01-04 15:20:05:163 Node005, QueryStage_NodeInfo
+2013-01-04 15:20:05:163 Node005, Queuing command: Request Node Info (Node=5): 0x01, 0x04, 0x00, 0x60, 0x05, 0x9e
+2013-01-04 15:20:05:163 Node005, Queuing Command: Query Stage Complete (NodeInfo)
+2013-01-04 15:20:05:163 Node006, WriteMsg WriteNextMsg m_currentMsg=b6e03108
+2013-01-04 15:20:05:163 
+2013-01-04 15:20:05:163 Node006, Sending command (Callback ID=0x00, Expected Reply=0x41) - Get Node Protocol Info (Node=6): 0x01, 0x04, 0x00, 0x41, 0x06, 0xbc
+2013-01-04 15:20:05:165 Node006,   ACK received CallbackId 0x00 Reply 0x41
+2013-01-04 15:20:05:166 Node006,   Received: 0x01, 0x09, 0x01, 0x41, 0xd2, 0x9c, 0x00, 0x04, 0x10, 0x01, 0xed
+2013-01-04 15:20:05:166 
+2013-01-04 15:20:05:166 Node006, Received reply to FUNC_ID_ZW_GET_NODE_PROTOCOL_INFO
+2013-01-04 15:20:05:166 Node006,   Protocol Info for Node 6:
+2013-01-04 15:20:05:166 Node006,     Listening     = true
+2013-01-04 15:20:05:167 Node006,     Beaming       = true
+2013-01-04 15:20:05:167 Node006,     Routing       = true
+2013-01-04 15:20:05:167 Node006,     Max Baud Rate = 40000
+2013-01-04 15:20:05:167 Node006,     Version       = 3
+2013-01-04 15:20:05:167 Node006,     Security      = false
+2013-01-04 15:20:05:167 Node006,   Basic device class    (0x04) - Routing Slave
+2013-01-04 15:20:05:167 Node006,   Generic device Class  (0x10) - Binary Switch
+2013-01-04 15:20:05:167 Node006,   Specific device class (0x01) - Binary Power Switch
+2013-01-04 15:20:05:167 Node006,     COMMAND_CLASS_BASIC will be mapped to COMMAND_CLASS_SWITCH_BINARY
+2013-01-04 15:20:05:167 Node006,   Mandatory Command Classes for Node 6:
+2013-01-04 15:20:05:167 Node006,     COMMAND_CLASS_BASIC
+2013-01-04 15:20:05:168 Node006,     COMMAND_CLASS_SWITCH_BINARY
+2013-01-04 15:20:05:168 Node006,     COMMAND_CLASS_SWITCH_ALL
+2013-01-04 15:20:05:168 Node006,   Mandatory Command Classes controlled by Node 6:
+2013-01-04 15:20:05:168 Node006,     None
+2013-01-04 15:20:05:168 Node006,   Expected reply was received
+2013-01-04 15:20:05:168 Node006,   Message transaction complete
+2013-01-04 15:20:05:168 
+2013-01-04 15:20:05:168 Node006, Query Stage Complete (ProtocolInfo)
+2013-01-04 15:20:05:168 Node006, QueryStage_WakeUp
+2013-01-04 15:20:05:169 Node006, QueryStage_ManufacturerSpecific1
+2013-01-04 15:20:05:169 Node006, QueryStage_NodeInfo
+2013-01-04 15:20:05:169 Node006, Queuing command: Request Node Info (Node=6): 0x01, 0x04, 0x00, 0x60, 0x06, 0x9d
+2013-01-04 15:20:05:169 Node006, Queuing Command: Query Stage Complete (NodeInfo)
+2013-01-04 15:20:05:169 Node007, WriteMsg WriteNextMsg m_currentMsg=b6e03590
+2013-01-04 15:20:05:169 
+2013-01-04 15:20:05:169 Node007, Sending command (Callback ID=0x00, Expected Reply=0x41) - Get Node Protocol Info (Node=7): 0x01, 0x04, 0x00, 0x41, 0x07, 0xbd
+2013-01-04 15:20:05:171 Node007,   ACK received CallbackId 0x00 Reply 0x41
+2013-01-04 15:20:05:172 Node007,   Received: 0x01, 0x09, 0x01, 0x41, 0xd2, 0x9c, 0x00, 0x04, 0x10, 0x01, 0xed
+2013-01-04 15:20:05:172 
+2013-01-04 15:20:05:172 Node007, Received reply to FUNC_ID_ZW_GET_NODE_PROTOCOL_INFO
+2013-01-04 15:20:05:172 Node007,   Protocol Info for Node 7:
+2013-01-04 15:20:05:172 Node007,     Listening     = true
+2013-01-04 15:20:05:172 Node007,     Beaming       = true
+2013-01-04 15:20:05:172 Node007,     Routing       = true
+2013-01-04 15:20:05:172 Node007,     Max Baud Rate = 40000
+2013-01-04 15:20:05:172 Node007,     Version       = 3
+2013-01-04 15:20:05:172 Node007,     Security      = false
+2013-01-04 15:20:05:172 Node007,   Basic device class    (0x04) - Routing Slave
+2013-01-04 15:20:05:172 Node007,   Generic device Class  (0x10) - Binary Switch
+2013-01-04 15:20:05:172 Node007,   Specific device class (0x01) - Binary Power Switch
+2013-01-04 15:20:05:173 Node007,     COMMAND_CLASS_BASIC will be mapped to COMMAND_CLASS_SWITCH_BINARY
+2013-01-04 15:20:05:173 Node007,   Mandatory Command Classes for Node 7:
+2013-01-04 15:20:05:173 Node007,     COMMAND_CLASS_BASIC
+2013-01-04 15:20:05:173 Node007,     COMMAND_CLASS_SWITCH_BINARY
+2013-01-04 15:20:05:173 Node007,     COMMAND_CLASS_SWITCH_ALL
+2013-01-04 15:20:05:173 Node007,   Mandatory Command Classes controlled by Node 7:
+2013-01-04 15:20:05:173 Node007,     None
+2013-01-04 15:20:05:173 Node007,   Expected reply was received
+2013-01-04 15:20:05:173 Node007,   Message transaction complete
+2013-01-04 15:20:05:173 
+2013-01-04 15:20:05:173 Node007, Query Stage Complete (ProtocolInfo)
+2013-01-04 15:20:05:173 Node007, QueryStage_WakeUp
+2013-01-04 15:20:05:173 Node007, QueryStage_ManufacturerSpecific1
+2013-01-04 15:20:05:173 Node007, QueryStage_NodeInfo
+2013-01-04 15:20:05:173 Node007, Queuing command: Request Node Info (Node=7): 0x01, 0x04, 0x00, 0x60, 0x07, 0x9c
+2013-01-04 15:20:05:173 Node007, Queuing Command: Query Stage Complete (NodeInfo)
+2013-01-04 15:20:05:174 Node001, Query Stage Complete (Neighbors)
+2013-01-04 15:20:05:174 Node001, QueryStage_Session
+2013-01-04 15:20:05:174 Node001, QueryStage_Dynamic
+2013-01-04 15:20:05:174 Node001, QueryStage_Configuration
+2013-01-04 15:20:05:174 Node001, QueryStage_Complete
+2013-01-04 15:20:05:174 Node002, WriteMsg WriteNextMsg m_currentMsg=b6e013f8
+2013-01-04 15:20:05:174 
+2013-01-04 15:20:05:174 Node002, Sending command (Callback ID=0x00, Expected Reply=0x49) - Request Node Info (Node=2): 0x01, 0x04, 0x00, 0x60, 0x02, 0x99
+2013-01-04 15:20:05:176 Node002,   ACK received CallbackId 0x00 Reply 0x49
+2013-01-04 15:20:05:180 Node002,   Received: 0x01, 0x04, 0x01, 0x60, 0x01, 0x9b
+2013-01-04 15:20:05:180 
+2013-01-04 15:20:05:180 Node002, FUNC_ID_ZW_REQUEST_NODE_INFO Request successful.
+2013-01-04 15:20:05:493 Node004,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x04, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x11, 0x00, 0x00, 0xeb
+2013-01-04 15:20:05:493 
+2013-01-04 15:20:05:493 Node004, ApplicationCommandHandler - Unhandled Command Class 0x32
+2013-01-04 15:20:05:536 Node004,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x04, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x11, 0x00, 0x00, 0xeb
+2013-01-04 15:20:05:536 
+2013-01-04 15:20:05:536 Node004, ApplicationCommandHandler - Unhandled Command Class 0x32
+2013-01-04 15:20:07:175 Node002, WriteMsg Wait Timeout m_currentMsg=b6e013f8
+2013-01-04 15:20:07:175 
+2013-01-04 15:20:07:175 Node002, Sending command (Attempt 2, Callback ID=0x00, Expected Reply=0x49) - Request Node Info (Node=2): 0x01, 0x04, 0x00, 0x60, 0x02, 0x99
+2013-01-04 15:20:07:177 Node002,   ACK received CallbackId 0x00 Reply 0x49
+2013-01-04 15:20:07:180 Node002,   Received: 0x01, 0x04, 0x01, 0x60, 0x01, 0x9b
+2013-01-04 15:20:07:180 
+2013-01-04 15:20:07:180 Node002, FUNC_ID_ZW_REQUEST_NODE_INFO Request successful.
+2013-01-04 15:20:07:947 Node002,   Received: 0x01, 0x06, 0x00, 0x49, 0x81, 0x00, 0x00, 0x31
+2013-01-04 15:20:07:947 
+2013-01-04 15:20:07:948 WARNING: FUNC_ID_ZW_APPLICATION_UPDATE: UPDATE_STATE_NODE_INFO_REQ_FAILED received
+2013-01-04 15:20:07:948 Node002, QueryStageRetry stage NodeInfo requested stage NodeInfo max 3 retries 0 pending 1
+2013-01-04 15:20:07:948 Node002,   Expected reply was received
+2013-01-04 15:20:07:948 Node002,   Message transaction complete
+2013-01-04 15:20:07:948 
+2013-01-04 15:20:07:948 Node002, Query Stage Complete (NodeInfo)
+2013-01-04 15:20:07:948 Node002, QueryStage_ManufacturerSpecific2
+2013-01-04 15:20:07:948 Node002, QueryStage_Versions
+2013-01-04 15:20:07:948 Node002, QueryStage_Instances
+2013-01-04 15:20:07:948 Node002, Essential node queries are complete
+2013-01-04 15:20:07:948 Node002, QueryStage_Static
+2013-01-04 15:20:07:948 Node002, QueryStage_Associations
+2013-01-04 15:20:07:949 Node002, QueryStage_Neighbors
+2013-01-04 15:20:07:949 Requesting routing info (neighbor list) for Node 2
+2013-01-04 15:20:07:949 Node002, Queuing command: Get Routing Info (Node=2): 0x01, 0x06, 0x00, 0x80, 0x02, 0x01, 0x01, 0x7b
+2013-01-04 15:20:07:949 Node002, Queuing Command: Query Stage Complete (Neighbors)
+2013-01-04 15:20:07:949 Node002, WriteMsg WriteNextMsg m_currentMsg=b6e1d050
+2013-01-04 15:20:07:949 
+2013-01-04 15:20:07:949 Node002, Sending command (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=2): 0x01, 0x06, 0x00, 0x80, 0x02, 0x01, 0x01, 0x7b
+2013-01-04 15:20:07:951 Node002,   ACK received CallbackId 0x00 Reply 0x80
+2013-01-04 15:20:07:955 Node002,   Received: 0x01, 0x20, 0x01, 0x80, 0x6d, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x33
+2013-01-04 15:20:07:955 
+2013-01-04 15:20:07:955 Node002, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2013-01-04 15:20:07:955 Node002,     Neighbors of this node are:
+2013-01-04 15:20:07:955 Node002,     Node 1
+2013-01-04 15:20:07:956 Node002,     Node 3
+2013-01-04 15:20:07:956 Node002,     Node 4
+2013-01-04 15:20:07:956 Node002,     Node 6
+2013-01-04 15:20:07:956 Node002,     Node 7
+2013-01-04 15:20:07:956 Node002,   Expected reply was received
+2013-01-04 15:20:07:956 Node002,   Message transaction complete
+2013-01-04 15:20:07:956 
+2013-01-04 15:20:07:956 Node003, WriteMsg WriteNextMsg m_currentMsg=b6e01808
+2013-01-04 15:20:07:956 
+2013-01-04 15:20:07:956 Node003, Sending command (Callback ID=0x00, Expected Reply=0x49) - Request Node Info (Node=3): 0x01, 0x04, 0x00, 0x60, 0x03, 0x98
+2013-01-04 15:20:07:958 Node003,   ACK received CallbackId 0x00 Reply 0x49
+2013-01-04 15:20:07:961 Node003,   Received: 0x01, 0x04, 0x01, 0x60, 0x01, 0x9b
+2013-01-04 15:20:07:961 
+2013-01-04 15:20:07:961 Node003, FUNC_ID_ZW_REQUEST_NODE_INFO Request successful.
+2013-01-04 15:20:09:957 Node003, WriteMsg Wait Timeout m_currentMsg=b6e01808
+2013-01-04 15:20:09:958 
+2013-01-04 15:20:09:958 Node003, Sending command (Attempt 2, Callback ID=0x00, Expected Reply=0x49) - Request Node Info (Node=3): 0x01, 0x04, 0x00, 0x60, 0x03, 0x98
+2013-01-04 15:20:09:960 Node003,   ACK received CallbackId 0x00 Reply 0x49
+2013-01-04 15:20:09:963 Node003,   Received: 0x01, 0x04, 0x01, 0x60, 0x01, 0x9b
+2013-01-04 15:20:09:963 
+2013-01-04 15:20:09:963 Node003, FUNC_ID_ZW_REQUEST_NODE_INFO Request successful.
+2013-01-04 15:20:10:615 Node003,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x03, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x04, 0x00, 0x00, 0xf9
+2013-01-04 15:20:10:615 
+2013-01-04 15:20:10:615 Node003, ApplicationCommandHandler - Unhandled Command Class 0x32
+2013-01-04 15:20:10:674 Node005,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x05, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x00, 0x00, 0x00, 0xfb
+2013-01-04 15:20:10:674 
+2013-01-04 15:20:10:674 Node005, ApplicationCommandHandler - Unhandled Command Class 0x32
+2013-01-04 15:20:10:709 Node003,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x03, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x04, 0x00, 0x00, 0xf9
+2013-01-04 15:20:10:709 
+2013-01-04 15:20:10:709 Node003, ApplicationCommandHandler - Unhandled Command Class 0x32
+2013-01-04 15:20:11:298 Node003,   Received: 0x01, 0x06, 0x00, 0x49, 0x81, 0x00, 0x00, 0x31
+2013-01-04 15:20:11:298 
+2013-01-04 15:20:11:298 WARNING: FUNC_ID_ZW_APPLICATION_UPDATE: UPDATE_STATE_NODE_INFO_REQ_FAILED received
+2013-01-04 15:20:11:298 Node003, QueryStageRetry stage NodeInfo requested stage NodeInfo max 3 retries 0 pending 1
+2013-01-04 15:20:11:298 Node003,   Expected reply was received
+2013-01-04 15:20:11:298 Node003,   Message transaction complete
+2013-01-04 15:20:11:298 
+2013-01-04 15:20:11:298 Node003, Query Stage Complete (NodeInfo)
+2013-01-04 15:20:11:298 Node003, QueryStage_ManufacturerSpecific2
+2013-01-04 15:20:11:298 Node003, QueryStage_Versions
+2013-01-04 15:20:11:299 Node003, QueryStage_Instances
+2013-01-04 15:20:11:299 Node003, Essential node queries are complete
+2013-01-04 15:20:11:299 Node003, QueryStage_Static
+2013-01-04 15:20:11:299 Node003, QueryStage_Associations
+2013-01-04 15:20:11:299 Node003, QueryStage_Neighbors
+2013-01-04 15:20:11:299 Requesting routing info (neighbor list) for Node 3
+2013-01-04 15:20:11:299 Node003, Queuing command: Get Routing Info (Node=3): 0x01, 0x06, 0x00, 0x80, 0x03, 0x01, 0x01, 0x7a
+2013-01-04 15:20:11:299 Node003, Queuing Command: Query Stage Complete (Neighbors)
+2013-01-04 15:20:11:299 Node003, WriteMsg WriteNextMsg m_currentMsg=b6e1e7d0
+2013-01-04 15:20:11:299 
+2013-01-04 15:20:11:299 Node003, Sending command (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=3): 0x01, 0x06, 0x00, 0x80, 0x03, 0x01, 0x01, 0x7a
+2013-01-04 15:20:11:301 Node003,   ACK received CallbackId 0x00 Reply 0x80
+2013-01-04 15:20:11:305 Node003,   Received: 0x01, 0x20, 0x01, 0x80, 0x7b, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x25
+2013-01-04 15:20:11:305 
+2013-01-04 15:20:11:306 Node003, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2013-01-04 15:20:11:306 Node003,     Neighbors of this node are:
+2013-01-04 15:20:11:306 Node003,     Node 1
+2013-01-04 15:20:11:306 Node003,     Node 2
+2013-01-04 15:20:11:306 Node003,     Node 4
+2013-01-04 15:20:11:306 Node003,     Node 5
+2013-01-04 15:20:11:306 Node003,     Node 6
+2013-01-04 15:20:11:306 Node003,     Node 7
+2013-01-04 15:20:11:306 Node003,   Expected reply was received
+2013-01-04 15:20:11:306 Node003,   Message transaction complete
+2013-01-04 15:20:11:306 
+2013-01-04 15:20:11:306 Node004, WriteMsg WriteNextMsg m_currentMsg=b6e02828
+2013-01-04 15:20:11:306 
+2013-01-04 15:20:11:306 Node004, Sending command (Callback ID=0x00, Expected Reply=0x49) - Request Node Info (Node=4): 0x01, 0x04, 0x00, 0x60, 0x04, 0x9f
+2013-01-04 15:20:11:311 Node004,   ACK received CallbackId 0x00 Reply 0x49
+2013-01-04 15:20:11:313 Node004,   Received: 0x01, 0x04, 0x01, 0x60, 0x01, 0x9b
+2013-01-04 15:20:11:313 
+2013-01-04 15:20:11:313 Node004, FUNC_ID_ZW_REQUEST_NODE_INFO Request successful.
+2013-01-04 15:20:11:419 Node004,   Received: 0x01, 0x11, 0x00, 0x49, 0x84, 0x04, 0x0b, 0x04, 0x10, 0x01, 0x25, 0x20, 0x72, 0x86, 0x27, 0x85, 0x32, 0x70, 0x28
+2013-01-04 15:20:11:419 
+2013-01-04 15:20:11:420 Node004, UPDATE_STATE_NODE_INFO_RECEIVED from node 4
+2013-01-04 15:20:11:420 Node004,   Optional command classes for node 4:
+2013-01-04 15:20:11:420 Node004,     COMMAND_CLASS_MANUFACTURER_SPECIFIC
+2013-01-04 15:20:11:420 Node004,     COMMAND_CLASS_VERSION
+2013-01-04 15:20:11:420 Node004,     COMMAND_CLASS_ASSOCIATION
+2013-01-04 15:20:11:420 Node004,     COMMAND_CLASS_METER
+2013-01-04 15:20:11:420 Node004,     COMMAND_CLASS_CONFIGURATION
+2013-01-04 15:20:11:420 Node004, Queuing Command: Query Stage Complete (NodeInfo)
+2013-01-04 15:20:11:420 Node004,   Expected reply was received
+2013-01-04 15:20:11:420 Node004,   Message transaction complete
+2013-01-04 15:20:11:420 
+2013-01-04 15:20:11:421 Node004, Query Stage Complete (NodeInfo)
+2013-01-04 15:20:11:421 Node004, QueryStage_ManufacturerSpecific2
+2013-01-04 15:20:11:421 Node004, Queuing command: ManufacturerSpecificCmd_Get (Node=4): 0x01, 0x09, 0x00, 0x13, 0x04, 0x02, 0x72, 0x04, 0x05, 0x01, 0x91
+2013-01-04 15:20:11:421 Node004, Queuing Command: Query Stage Complete (ManufacturerSpecific2)
+2013-01-04 15:20:11:421 Node005, WriteMsg WriteNextMsg m_currentMsg=b6e02c80
+2013-01-04 15:20:11:421 
+2013-01-04 15:20:11:421 Node005, Sending command (Callback ID=0x00, Expected Reply=0x49) - Request Node Info (Node=5): 0x01, 0x04, 0x00, 0x60, 0x05, 0x9e
+2013-01-04 15:20:11:423 Node005,   ACK received CallbackId 0x00 Reply 0x49
+2013-01-04 15:20:11:427 Node005,   Received: 0x01, 0x04, 0x01, 0x60, 0x01, 0x9b
+2013-01-04 15:20:11:427 
+2013-01-04 15:20:11:427 Node005, FUNC_ID_ZW_REQUEST_NODE_INFO Request successful.
+2013-01-04 15:20:11:450 Node005,   Received: 0x01, 0x11, 0x00, 0x49, 0x84, 0x05, 0x0b, 0x04, 0x10, 0x01, 0x25, 0x20, 0x72, 0x86, 0x27, 0x85, 0x32, 0x70, 0x29
+2013-01-04 15:20:11:450 
+2013-01-04 15:20:11:451 Node005, UPDATE_STATE_NODE_INFO_RECEIVED from node 5
+2013-01-04 15:20:11:451 Node005,   Optional command classes for node 5:
+2013-01-04 15:20:11:451 Node005,     COMMAND_CLASS_MANUFACTURER_SPECIFIC
+2013-01-04 15:20:11:451 Node005,     COMMAND_CLASS_VERSION
+2013-01-04 15:20:11:451 Node005,     COMMAND_CLASS_ASSOCIATION
+2013-01-04 15:20:11:451 Node005,     COMMAND_CLASS_METER
+2013-01-04 15:20:11:451 Node005,     COMMAND_CLASS_CONFIGURATION
+2013-01-04 15:20:11:451 Node005, Queuing Command: Query Stage Complete (NodeInfo)
+2013-01-04 15:20:11:451 Node005,   Expected reply was received
+2013-01-04 15:20:11:451 Node005,   Message transaction complete
+2013-01-04 15:20:11:451 
+2013-01-04 15:20:11:452 Node005, Query Stage Complete (NodeInfo)
+2013-01-04 15:20:11:452 Node005, QueryStage_ManufacturerSpecific2
+2013-01-04 15:20:11:452 Node005, Queuing command: ManufacturerSpecificCmd_Get (Node=5): 0x01, 0x09, 0x00, 0x13, 0x05, 0x02, 0x72, 0x04, 0x05, 0x02, 0x93
+2013-01-04 15:20:11:452 Node005, Queuing Command: Query Stage Complete (ManufacturerSpecific2)
+2013-01-04 15:20:11:452 Node006, WriteMsg WriteNextMsg m_currentMsg=b6e03108
+2013-01-04 15:20:11:452 
+2013-01-04 15:20:11:452 Node006, Sending command (Callback ID=0x00, Expected Reply=0x49) - Request Node Info (Node=6): 0x01, 0x04, 0x00, 0x60, 0x06, 0x9d
+2013-01-04 15:20:11:454 Node006,   ACK received CallbackId 0x00 Reply 0x49
+2013-01-04 15:20:11:457 Node006,   Received: 0x01, 0x04, 0x01, 0x60, 0x01, 0x9b
+2013-01-04 15:20:11:457 
+2013-01-04 15:20:11:457 Node006, FUNC_ID_ZW_REQUEST_NODE_INFO Request successful.
+2013-01-04 15:20:11:463 Node006,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x06, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x00, 0x00, 0x00, 0xf8
+2013-01-04 15:20:11:463 
+2013-01-04 15:20:11:463 Node006, ApplicationCommandHandler - Unhandled Command Class 0x32
+2013-01-04 15:20:11:491 Node006,   Received: 0x01, 0x11, 0x00, 0x49, 0x84, 0x06, 0x0b, 0x04, 0x10, 0x01, 0x25, 0x20, 0x72, 0x86, 0x27, 0x85, 0x32, 0x70, 0x2a
+2013-01-04 15:20:11:491 
+2013-01-04 15:20:11:491 Node006, UPDATE_STATE_NODE_INFO_RECEIVED from node 6
+2013-01-04 15:20:11:491 Node006,   Optional command classes for node 6:
+2013-01-04 15:20:11:491 Node006,     COMMAND_CLASS_MANUFACTURER_SPECIFIC
+2013-01-04 15:20:11:492 Node006,     COMMAND_CLASS_VERSION
+2013-01-04 15:20:11:492 Node006,     COMMAND_CLASS_ASSOCIATION
+2013-01-04 15:20:11:492 Node006,     COMMAND_CLASS_METER
+2013-01-04 15:20:11:492 Node006,     COMMAND_CLASS_CONFIGURATION
+2013-01-04 15:20:11:492 Node006, Queuing Command: Query Stage Complete (NodeInfo)
+2013-01-04 15:20:11:492 Node006,   Expected reply was received
+2013-01-04 15:20:11:492 Node006,   Message transaction complete
+2013-01-04 15:20:11:492 
+2013-01-04 15:20:11:492 Node006, Query Stage Complete (NodeInfo)
+2013-01-04 15:20:11:492 Node006, QueryStage_ManufacturerSpecific2
+2013-01-04 15:20:11:493 Node006, Queuing command: ManufacturerSpecificCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x72, 0x04, 0x05, 0x03, 0x91
+2013-01-04 15:20:11:493 Node006, Queuing Command: Query Stage Complete (ManufacturerSpecific2)
+2013-01-04 15:20:11:493 Node007, WriteMsg WriteNextMsg m_currentMsg=b6e03590
+2013-01-04 15:20:11:493 
+2013-01-04 15:20:11:493 Node007, Sending command (Callback ID=0x00, Expected Reply=0x49) - Request Node Info (Node=7): 0x01, 0x04, 0x00, 0x60, 0x07, 0x9c
+2013-01-04 15:20:11:495 Node007,   ACK received CallbackId 0x00 Reply 0x49
+2013-01-04 15:20:11:499 Node007,   Received: 0x01, 0x04, 0x01, 0x60, 0x01, 0x9b
+2013-01-04 15:20:11:499 
+2013-01-04 15:20:11:499 Node007, FUNC_ID_ZW_REQUEST_NODE_INFO Request successful.
+2013-01-04 15:20:11:522 Node007,   Received: 0x01, 0x11, 0x00, 0x49, 0x84, 0x07, 0x0b, 0x04, 0x10, 0x01, 0x25, 0x20, 0x72, 0x86, 0x27, 0x85, 0x32, 0x70, 0x2b
+2013-01-04 15:20:11:522 
+2013-01-04 15:20:11:522 Node007, UPDATE_STATE_NODE_INFO_RECEIVED from node 7
+2013-01-04 15:20:11:522 Node007,   Optional command classes for node 7:
+2013-01-04 15:20:11:522 Node007,     COMMAND_CLASS_MANUFACTURER_SPECIFIC
+2013-01-04 15:20:11:523 Node007,     COMMAND_CLASS_VERSION
+2013-01-04 15:20:11:523 Node007,     COMMAND_CLASS_ASSOCIATION
+2013-01-04 15:20:11:523 Node007,     COMMAND_CLASS_METER
+2013-01-04 15:20:11:523 Node007,     COMMAND_CLASS_CONFIGURATION
+2013-01-04 15:20:11:523 Node007, Queuing Command: Query Stage Complete (NodeInfo)
+2013-01-04 15:20:11:523 Node007,   Expected reply was received
+2013-01-04 15:20:11:523 Node007,   Message transaction complete
+2013-01-04 15:20:11:523 
+2013-01-04 15:20:11:523 Node007, Query Stage Complete (NodeInfo)
+2013-01-04 15:20:11:523 Node007, QueryStage_ManufacturerSpecific2
+2013-01-04 15:20:11:524 Node007, Queuing command: ManufacturerSpecificCmd_Get (Node=7): 0x01, 0x09, 0x00, 0x13, 0x07, 0x02, 0x72, 0x04, 0x05, 0x04, 0x97
+2013-01-04 15:20:11:524 Node007, Queuing Command: Query Stage Complete (ManufacturerSpecific2)
+2013-01-04 15:20:11:524 Node002, Query Stage Complete (Neighbors)
+2013-01-04 15:20:11:524 Node002, QueryStage_Session
+2013-01-04 15:20:11:524 Node002, Queuing command: SwitchAllCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x27, 0x02, 0x05, 0x05, 0xc0
+2013-01-04 15:20:11:524 Node002, Queuing Command: Query Stage Complete (Session)
+2013-01-04 15:20:11:524 Node003, Query Stage Complete (Neighbors)
+2013-01-04 15:20:11:524 Node003, QueryStage_Session
+2013-01-04 15:20:11:524 Node003, Queuing command: SwitchAllCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x27, 0x02, 0x05, 0x06, 0xc2
+2013-01-04 15:20:11:524 Node003, Queuing Command: Query Stage Complete (Session)
+2013-01-04 15:20:11:524 Node004, Query Stage Complete (NodeInfo)
+2013-01-04 15:20:11:525 Node004, Queuing Command: Query Stage Complete (ManufacturerSpecific2)
+2013-01-04 15:20:11:525 Node004, WriteMsg WriteNextMsg m_currentMsg=b6e02828
+2013-01-04 15:20:11:525 
+2013-01-04 15:20:11:525 Node004, Sending command (Callback ID=0x01, Expected Reply=0x04) - ManufacturerSpecificCmd_Get (Node=4): 0x01, 0x09, 0x00, 0x13, 0x04, 0x02, 0x72, 0x04, 0x05, 0x01, 0x91
+2013-01-04 15:20:11:527 Node004,   ACK received CallbackId 0x01 Reply 0x04
+2013-01-04 15:20:11:531 Node004,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2013-01-04 15:20:11:531 Node004, ZW_SEND_DATA delivered to Z-Wave stack
+2013-01-04 15:20:11:543 Node004,   Received: 0x01, 0x05, 0x00, 0x13, 0x01, 0x00, 0xe8
+2013-01-04 15:20:11:543 Node004,   ZW_SEND_DATA Request with callback ID 0x01 received (expected 0x01)
+2013-01-04 15:20:11:552 Node004,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x04, 0x08, 0x72, 0x05, 0x00, 0x60, 0x00, 0x04, 0x00, 0x02, 0xe8
+2013-01-04 15:20:11:552 
+2013-01-04 15:20:11:552 Node004,   Opening config param file ../../../../config/everspring/an158.xml
+2013-01-04 15:20:11:553 Node004, Received manufacturer specific report from node 4: Manufacturer=Everspring, Product=AN158 Plug-in Meter Appliance Module
+2013-01-04 15:20:11:553 Node004,   Expected reply and command class was received
+2013-01-04 15:20:11:553 Node004,   Message transaction complete
+2013-01-04 15:20:11:553 
+2013-01-04 15:20:11:554 Node004, Query Stage Complete (ManufacturerSpecific2)
+2013-01-04 15:20:11:554 Node004, QueryStage_Versions
+2013-01-04 15:20:11:554 Node004, Queuing command: VersionCmd_CommandClassGet (Node=4): 0x01, 0x0a, 0x00, 0x13, 0x04, 0x03, 0x86, 0x13, 0x32, 0x05, 0x07, 0x44
+2013-01-04 15:20:11:554 Node004, Queuing Command: Query Stage Complete (Versions)
+2013-01-04 15:20:11:554 Node004, WriteMsg WriteNextMsg m_currentMsg=b6e02828
+2013-01-04 15:20:11:555 
+2013-01-04 15:20:11:555 Node004, Sending command (Callback ID=0x07, Expected Reply=0x04) - VersionCmd_CommandClassGet (Node=4): 0x01, 0x0a, 0x00, 0x13, 0x04, 0x03, 0x86, 0x13, 0x32, 0x05, 0x07, 0x44
+2013-01-04 15:20:11:557 Node004,   ACK received CallbackId 0x07 Reply 0x04
+2013-01-04 15:20:11:561 Node004,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2013-01-04 15:20:11:561 Node004, ZW_SEND_DATA delivered to Z-Wave stack
+2013-01-04 15:20:11:599 Node003,   Received: 0x01, 0x11, 0x00, 0x49, 0x84, 0x03, 0x0b, 0x04, 0x10, 0x01, 0x25, 0x20, 0x72, 0x86, 0x27, 0x85, 0x32, 0x70, 0x2f
+2013-01-04 15:20:11:599 
+2013-01-04 15:20:11:599 Node003, UPDATE_STATE_NODE_INFO_RECEIVED from node 3
+2013-01-04 15:20:11:599 Node003,   Optional command classes for node 3:
+2013-01-04 15:20:11:599 Node003,     COMMAND_CLASS_MANUFACTURER_SPECIFIC
+2013-01-04 15:20:11:600 Node003,     COMMAND_CLASS_VERSION
+2013-01-04 15:20:11:600 Node003,     COMMAND_CLASS_ASSOCIATION
+2013-01-04 15:20:11:600 Node003,     COMMAND_CLASS_METER
+2013-01-04 15:20:11:600 Node003,     COMMAND_CLASS_CONFIGURATION
+2013-01-04 15:20:11:600 Node003, QueryStage_ManufacturerSpecific2
+2013-01-04 15:20:11:600 Node003, Queuing command: ManufacturerSpecificCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x72, 0x04, 0x05, 0x08, 0x9f
+2013-01-04 15:20:11:600 Node003, Queuing Command: Query Stage Complete (ManufacturerSpecific2)
+2013-01-04 15:20:11:614 Node003,   Received: 0x01, 0x11, 0x00, 0x49, 0x84, 0x03, 0x0b, 0x04, 0x10, 0x01, 0x25, 0x20, 0x72, 0x86, 0x27, 0x85, 0x32, 0x70, 0x2f
+2013-01-04 15:20:11:614 
+2013-01-04 15:20:11:614 Node003, UPDATE_STATE_NODE_INFO_RECEIVED from node 3
+2013-01-04 15:20:11:614 Node003, Queuing Command: Query Stage Complete (ManufacturerSpecific2)
+2013-01-04 15:20:11:641 Node004,   Received: 0x01, 0x05, 0x00, 0x13, 0x07, 0x00, 0xee
+2013-01-04 15:20:11:641 Node004,   ZW_SEND_DATA Request with callback ID 0x07 received (expected 0x07)
+2013-01-04 15:20:11:648 Node004,   Received: 0x01, 0x0a, 0x00, 0x04, 0x00, 0x04, 0x04, 0x86, 0x14, 0x32, 0x02, 0x53
+2013-01-04 15:20:11:648 
+2013-01-04 15:20:11:648 Node004, Received Command Class Version report from node 4: CommandClass=COMMAND_CLASS_METER, Version=2
+2013-01-04 15:20:11:648 Node004,   Expected reply and command class was received
+2013-01-04 15:20:11:648 Node004,   Message transaction complete
+2013-01-04 15:20:11:648 
+2013-01-04 15:20:11:649 Node005, Query Stage Complete (NodeInfo)
+2013-01-04 15:20:11:649 Node005, Queuing Command: Query Stage Complete (ManufacturerSpecific2)
+2013-01-04 15:20:11:649 Node005, WriteMsg WriteNextMsg m_currentMsg=b6e02c80
+2013-01-04 15:20:11:649 
+2013-01-04 15:20:11:649 Node005, Sending command (Callback ID=0x02, Expected Reply=0x04) - ManufacturerSpecificCmd_Get (Node=5): 0x01, 0x09, 0x00, 0x13, 0x05, 0x02, 0x72, 0x04, 0x05, 0x02, 0x93
+2013-01-04 15:20:11:652 Node005,   ACK received CallbackId 0x02 Reply 0x04
+2013-01-04 15:20:11:656 Node005,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2013-01-04 15:20:11:656 Node005, ZW_SEND_DATA delivered to Z-Wave stack
+2013-01-04 15:20:11:668 Node005,   Received: 0x01, 0x05, 0x00, 0x13, 0x02, 0x00, 0xeb
+2013-01-04 15:20:11:668 Node005,   ZW_SEND_DATA Request with callback ID 0x02 received (expected 0x02)
+2013-01-04 15:20:11:677 Node005,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x05, 0x08, 0x72, 0x05, 0x00, 0x60, 0x00, 0x04, 0x00, 0x02, 0xe9
+2013-01-04 15:20:11:677 
+2013-01-04 15:20:11:677 Node005,   Opening config param file ../../../../config/everspring/an158.xml
+2013-01-04 15:20:11:678 Node005, Received manufacturer specific report from node 5: Manufacturer=Everspring, Product=AN158 Plug-in Meter Appliance Module
+2013-01-04 15:20:11:678 Node005,   Expected reply and command class was received
+2013-01-04 15:20:11:678 Node005,   Message transaction complete
+2013-01-04 15:20:11:678 
+2013-01-04 15:20:11:678 Node005, Query Stage Complete (ManufacturerSpecific2)
+2013-01-04 15:20:11:679 Node005, QueryStage_Versions
+2013-01-04 15:20:11:679 Node005, Queuing command: VersionCmd_CommandClassGet (Node=5): 0x01, 0x0a, 0x00, 0x13, 0x05, 0x03, 0x86, 0x13, 0x32, 0x05, 0x09, 0x4b
+2013-01-04 15:20:11:679 Node005, Queuing Command: Query Stage Complete (Versions)
+2013-01-04 15:20:11:679 Node005, WriteMsg WriteNextMsg m_currentMsg=b6e02c80
+2013-01-04 15:20:11:679 
+2013-01-04 15:20:11:679 Node005, Sending command (Callback ID=0x09, Expected Reply=0x04) - VersionCmd_CommandClassGet (Node=5): 0x01, 0x0a, 0x00, 0x13, 0x05, 0x03, 0x86, 0x13, 0x32, 0x05, 0x09, 0x4b
+2013-01-04 15:20:11:681 Node005,   ACK received CallbackId 0x09 Reply 0x04
+2013-01-04 15:20:11:685 Node005,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2013-01-04 15:20:11:685 Node005, ZW_SEND_DATA delivered to Z-Wave stack
+2013-01-04 15:20:11:698 Node005,   Received: 0x01, 0x05, 0x00, 0x13, 0x09, 0x00, 0xe0
+2013-01-04 15:20:11:698 Node005,   ZW_SEND_DATA Request with callback ID 0x09 received (expected 0x09)
+2013-01-04 15:20:11:767 Node007,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x07, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x00, 0x00, 0x00, 0xf9
+2013-01-04 15:20:11:767 
+2013-01-04 15:20:11:767 Node007, Received Meter report from node 7: Power=0W
+2013-01-04 15:20:11:767 Node007, Initial read of value
+2013-01-04 15:20:11:840 Node005,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x05, 0x08, 0x86, 0x14, 0x32, 0x02, 0x00, 0x04, 0x00, 0x02, 0x5c
+2013-01-04 15:20:11:840 
+2013-01-04 15:20:11:840 Node005, Received Command Class Version report from node 5: CommandClass=COMMAND_CLASS_METER, Version=2
+2013-01-04 15:20:11:840 Node005,   Expected reply and command class was received
+2013-01-04 15:20:11:840 Node005,   Message transaction complete
+2013-01-04 15:20:11:841 
+2013-01-04 15:20:11:841 Node006, Query Stage Complete (NodeInfo)
+2013-01-04 15:20:11:841 Node006, Queuing Command: Query Stage Complete (ManufacturerSpecific2)
+2013-01-04 15:20:11:841 Node006, WriteMsg WriteNextMsg m_currentMsg=b6e03108
+2013-01-04 15:20:11:841 
+2013-01-04 15:20:11:841 Node006, Sending command (Callback ID=0x03, Expected Reply=0x04) - ManufacturerSpecificCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x72, 0x04, 0x05, 0x03, 0x91
+2013-01-04 15:20:11:844 Node006,   ACK received CallbackId 0x03 Reply 0x04
+2013-01-04 15:20:11:847 Node006,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2013-01-04 15:20:11:847 Node006, ZW_SEND_DATA delivered to Z-Wave stack
+2013-01-04 15:20:11:859 Node006,   Received: 0x01, 0x05, 0x00, 0x13, 0x03, 0x00, 0xea
+2013-01-04 15:20:11:859 Node006,   ZW_SEND_DATA Request with callback ID 0x03 received (expected 0x03)
+2013-01-04 15:20:11:868 Node006,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x06, 0x08, 0x72, 0x05, 0x00, 0x60, 0x00, 0x04, 0x00, 0x02, 0xea
+2013-01-04 15:20:11:868 
+2013-01-04 15:20:11:868 Node006,   Opening config param file ../../../../config/everspring/an158.xml
+2013-01-04 15:20:11:869 Node006, Received manufacturer specific report from node 6: Manufacturer=Everspring, Product=AN158 Plug-in Meter Appliance Module
+2013-01-04 15:20:11:869 Node006,   Expected reply and command class was received
+2013-01-04 15:20:11:869 Node006,   Message transaction complete
+2013-01-04 15:20:11:869 
+2013-01-04 15:20:11:869 Node006, Query Stage Complete (ManufacturerSpecific2)
+2013-01-04 15:20:11:869 Node006, QueryStage_Versions
+2013-01-04 15:20:11:869 Node006, Queuing command: VersionCmd_CommandClassGet (Node=6): 0x01, 0x0a, 0x00, 0x13, 0x06, 0x03, 0x86, 0x13, 0x32, 0x05, 0x0a, 0x4b
+2013-01-04 15:20:11:869 Node006, Queuing Command: Query Stage Complete (Versions)
+2013-01-04 15:20:11:869 Node006, WriteMsg WriteNextMsg m_currentMsg=b6e03108
+2013-01-04 15:20:11:869 
+2013-01-04 15:20:11:869 Node006, Sending command (Callback ID=0x0a, Expected Reply=0x04) - VersionCmd_CommandClassGet (Node=6): 0x01, 0x0a, 0x00, 0x13, 0x06, 0x03, 0x86, 0x13, 0x32, 0x05, 0x0a, 0x4b
+2013-01-04 15:20:11:872 Node006,   ACK received CallbackId 0x0a Reply 0x04
+2013-01-04 15:20:11:875 Node006,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2013-01-04 15:20:11:875 Node006, ZW_SEND_DATA delivered to Z-Wave stack
+2013-01-04 15:20:11:888 Node006,   Received: 0x01, 0x05, 0x00, 0x13, 0x0a, 0x00, 0xe3
+2013-01-04 15:20:11:888 Node006,   ZW_SEND_DATA Request with callback ID 0x0a received (expected 0x0a)
+2013-01-04 15:20:11:895 Node006,   Received: 0x01, 0x0a, 0x00, 0x04, 0x00, 0x06, 0x04, 0x86, 0x14, 0x32, 0x02, 0x51
+2013-01-04 15:20:11:895 
+2013-01-04 15:20:11:895 Node006, Received Command Class Version report from node 6: CommandClass=COMMAND_CLASS_METER, Version=2
+2013-01-04 15:20:11:895 Node006,   Expected reply and command class was received
+2013-01-04 15:20:11:895 Node006,   Message transaction complete
+2013-01-04 15:20:11:896 
+2013-01-04 15:20:11:896 Node007, Query Stage Complete (NodeInfo)
+2013-01-04 15:20:11:896 Node007, Queuing Command: Query Stage Complete (ManufacturerSpecific2)
+2013-01-04 15:20:11:896 Node007, WriteMsg WriteNextMsg m_currentMsg=b6e03590
+2013-01-04 15:20:11:896 
+2013-01-04 15:20:11:896 Node007, Sending command (Callback ID=0x04, Expected Reply=0x04) - ManufacturerSpecificCmd_Get (Node=7): 0x01, 0x09, 0x00, 0x13, 0x07, 0x02, 0x72, 0x04, 0x05, 0x04, 0x97
+2013-01-04 15:20:11:899 Node007,   ACK received CallbackId 0x04 Reply 0x04
+2013-01-04 15:20:11:902 Node007,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2013-01-04 15:20:11:902 Node007, ZW_SEND_DATA delivered to Z-Wave stack
+2013-01-04 15:20:11:915 Node007,   Received: 0x01, 0x05, 0x00, 0x13, 0x04, 0x00, 0xed
+2013-01-04 15:20:11:915 Node007,   ZW_SEND_DATA Request with callback ID 0x04 received (expected 0x04)
+2013-01-04 15:20:11:924 Node007,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x07, 0x08, 0x72, 0x05, 0x00, 0x60, 0x00, 0x04, 0x00, 0x02, 0xeb
+2013-01-04 15:20:11:924 
+2013-01-04 15:20:11:924 Node007,   Opening config param file ../../../../config/everspring/an158.xml
+2013-01-04 15:20:11:925 Node007, Received manufacturer specific report from node 7: Manufacturer=Everspring, Product=AN158 Plug-in Meter Appliance Module
+2013-01-04 15:20:11:925 Node007,   Expected reply and command class was received
+2013-01-04 15:20:11:925 Node007,   Message transaction complete
+2013-01-04 15:20:11:925 
+2013-01-04 15:20:11:925 Node007, Query Stage Complete (ManufacturerSpecific2)
+2013-01-04 15:20:11:926 Node007, QueryStage_Versions
+2013-01-04 15:20:11:926 Node007, Queuing command: VersionCmd_CommandClassGet (Node=7): 0x01, 0x0a, 0x00, 0x13, 0x07, 0x03, 0x86, 0x13, 0x32, 0x05, 0x0b, 0x4b
+2013-01-04 15:20:11:926 Node007, Queuing Command: Query Stage Complete (Versions)
+2013-01-04 15:20:11:926 Node007, WriteMsg WriteNextMsg m_currentMsg=b6e03590
+2013-01-04 15:20:11:926 
+2013-01-04 15:20:11:926 Node007, Sending command (Callback ID=0x0b, Expected Reply=0x04) - VersionCmd_CommandClassGet (Node=7): 0x01, 0x0a, 0x00, 0x13, 0x07, 0x03, 0x86, 0x13, 0x32, 0x05, 0x0b, 0x4b
+2013-01-04 15:20:11:928 Node007,   ACK received CallbackId 0x0b Reply 0x04
+2013-01-04 15:20:11:932 Node007,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2013-01-04 15:20:11:932 Node007, ZW_SEND_DATA delivered to Z-Wave stack
+2013-01-04 15:20:11:945 Node007,   Received: 0x01, 0x05, 0x00, 0x13, 0x0b, 0x00, 0xe2
+2013-01-04 15:20:11:945 Node007,   ZW_SEND_DATA Request with callback ID 0x0b received (expected 0x0b)
+2013-01-04 15:20:11:952 Node007,   Received: 0x01, 0x0a, 0x00, 0x04, 0x00, 0x07, 0x04, 0x86, 0x14, 0x32, 0x02, 0x50
+2013-01-04 15:20:11:952 
+2013-01-04 15:20:11:952 Node007, Received Command Class Version report from node 7: CommandClass=COMMAND_CLASS_METER, Version=2
+2013-01-04 15:20:11:952 Node007,   Expected reply and command class was received
+2013-01-04 15:20:11:952 Node007,   Message transaction complete
+2013-01-04 15:20:11:953 
+2013-01-04 15:20:11:953 Node002, WriteMsg WriteNextMsg m_currentMsg=b6e1e7d0
+2013-01-04 15:20:11:953 
+2013-01-04 15:20:11:953 Node002, Sending command (Callback ID=0x05, Expected Reply=0x04) - SwitchAllCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x27, 0x02, 0x05, 0x05, 0xc0
+2013-01-04 15:20:11:956 Node002,   ACK received CallbackId 0x05 Reply 0x04
+2013-01-04 15:20:11:960 Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2013-01-04 15:20:11:960 Node002, ZW_SEND_DATA delivered to Z-Wave stack
+2013-01-04 15:20:12:063 Node005,   Received: 0x01, 0x0a, 0x00, 0x04, 0x00, 0x05, 0x04, 0x86, 0x14, 0x32, 0x02, 0x52
+2013-01-04 15:20:12:063 
+2013-01-04 15:20:12:063 Node005, Received Command Class Version report from node 5: CommandClass=COMMAND_CLASS_METER, Version=2
+2013-01-04 15:20:13:953 Node002, WriteMsg Wait Timeout m_currentMsg=b6e1e7d0
+2013-01-04 15:20:13:953 
+2013-01-04 15:20:13:953 Node002, Sending command (Attempt 2, Callback ID=0x05, Expected Reply=0x04) - SwitchAllCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x27, 0x02, 0x05, 0x05, 0xc0
+2013-01-04 15:20:13:956 Node002,   ACK received CallbackId 0x05 Reply 0x04
+2013-01-04 15:20:13:958 Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2013-01-04 15:20:13:958 Node002, ZW_SEND_DATA delivered to Z-Wave stack
+2013-01-04 15:20:15:817 Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x05, 0x01, 0xed
+2013-01-04 15:20:15:817 Node002,   ZW_SEND_DATA Request with callback ID 0x05 received (expected 0x05)
+2013-01-04 15:20:15:817 Node002, ERROR: ZW_SEND_DATA failed. No ACK received - device may be asleep.
+2013-01-04 15:20:15:817 Node002,   WARNING: Device is not a sleeping node - retrying the send.
+2013-01-04 15:20:15:817 Node002,   Expected callbackId was received
+2013-01-04 15:20:15:954 Node002, WriteMsg Wait Timeout m_currentMsg=b6e1e7d0
+2013-01-04 15:20:15:954 
+2013-01-04 15:20:15:954 Node002, Sending command (Attempt 3, Callback ID=0x05, Expected Reply=0x04) - SwitchAllCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x27, 0x02, 0x05, 0x05, 0xc0
+2013-01-04 15:20:15:956 Node002,   ACK received CallbackId 0x05 Reply 0x04
+2013-01-04 15:20:15:959 Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2013-01-04 15:20:15:959 Node002, ZW_SEND_DATA delivered to Z-Wave stack
+2013-01-04 15:20:16:585 Node004,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x04, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x10, 0x00, 0x00, 0xea
+2013-01-04 15:20:16:585 
+2013-01-04 15:20:17:954 Node002, WriteMsg Wait Timeout m_currentMsg=b6e1e7d0
+2013-01-04 15:20:17:954 Node002, ERROR: Dropping command, expected response not received after 3 attempt(s)
+2013-01-04 15:20:17:954 Node002, Query Stage Complete (Session)
+2013-01-04 15:20:17:954 Node002, QueryStage_Dynamic
+2013-01-04 15:20:17:954 Node002, Queuing command: BasicCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x20, 0x02, 0x05, 0x0c, 0xce
+2013-01-04 15:20:17:954 Node002, Queuing command: SwitchBinaryCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x25, 0x02, 0x05, 0x0d, 0xca
+2013-01-04 15:20:17:954 Node002, Queuing Command: Query Stage Complete (Dynamic)
+2013-01-04 15:20:17:955 Node002, WriteMsg WriteNextMsg m_currentMsg=b6e1e7d0
+2013-01-04 15:20:17:955 
+2013-01-04 15:20:17:955 Node002, Sending command (Callback ID=0x0c, Expected Reply=0x04) - BasicCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x20, 0x02, 0x05, 0x0c, 0xce
+2013-01-04 15:20:17:958 Node002,   ACK received CallbackId 0x0c Reply 0x04
+2013-01-04 15:20:17:960 Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2013-01-04 15:20:17:960 Node002, ZW_SEND_DATA delivered to Z-Wave stack
+2013-01-04 15:20:19:955 Node002, WriteMsg Wait Timeout m_currentMsg=b6e1e7d0
+2013-01-04 15:20:19:956 
+2013-01-04 15:20:19:956 Node002, Sending command (Attempt 2, Callback ID=0x0c, Expected Reply=0x04) - BasicCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x20, 0x02, 0x05, 0x0c, 0xce
+2013-01-04 15:20:19:959 Node002,   ACK received CallbackId 0x0c Reply 0x04
+2013-01-04 15:20:19:959 Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2013-01-04 15:20:19:959 Node002, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2013-01-04 15:20:20:676 Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x0c, 0x01, 0xe4
+2013-01-04 15:20:20:676 Node002,   ZW_SEND_DATA Request with callback ID 0x0c received (expected 0x0c)
+2013-01-04 15:20:20:676 Node002, ERROR: ZW_SEND_DATA failed. No ACK received - device may be asleep.
+2013-01-04 15:20:20:676 Node002,   WARNING: Device is not a sleeping node - retrying the send.
+2013-01-04 15:20:20:676 Node002,   Expected callbackId was received
+2013-01-04 15:20:21:727 Node003,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x03, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x04, 0x00, 0x00, 0xf9
+2013-01-04 15:20:21:727 
+2013-01-04 15:20:21:727 Node003, Received Meter report from node 3: Power=4W
+2013-01-04 15:20:21:728 Node003, Initial read of value
+2013-01-04 15:20:21:784 Node003,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x03, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x04, 0x00, 0x00, 0xf9
+2013-01-04 15:20:21:784 
+2013-01-04 15:20:21:784 Node003, Received Meter report from node 3: Power=4W
+2013-01-04 15:20:21:784 Node003, Refreshed Value: old value=4, new value=4, type=string
+2013-01-04 15:20:21:784 Node003, Changes to this value are not verified
+2013-01-04 15:20:21:956 Node002, WriteMsg Wait Timeout m_currentMsg=b6e1e7d0
+2013-01-04 15:20:21:956 
+2013-01-04 15:20:21:956 Node002, Sending command (Attempt 3, Callback ID=0x0c, Expected Reply=0x04) - BasicCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x20, 0x02, 0x05, 0x0c, 0xce
+2013-01-04 15:20:21:958 Node002,   ACK received CallbackId 0x0c Reply 0x04
+2013-01-04 15:20:21:961 Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2013-01-04 15:20:21:961 Node002, ZW_SEND_DATA delivered to Z-Wave stack
+2013-01-04 15:20:22:574 Node006,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x06, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x00, 0x00, 0x00, 0xf8
+2013-01-04 15:20:22:574 
+2013-01-04 15:20:22:682 Node007,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x07, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x00, 0x00, 0x00, 0xf9
+2013-01-04 15:20:22:682 
+2013-01-04 15:20:23:956 Node002, WriteMsg Wait Timeout m_currentMsg=b6e1e7d0
+2013-01-04 15:20:23:956 Node002, ERROR: Dropping command, expected response not received after 3 attempt(s)
+2013-01-04 15:20:23:956 Node002, WriteMsg WriteNextMsg m_currentMsg=b6e03590
+2013-01-04 15:20:23:956 
+2013-01-04 15:20:23:956 Node002, Sending command (Callback ID=0x0d, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x25, 0x02, 0x05, 0x0d, 0xca
+2013-01-04 15:20:23:959 Node002,   ACK received CallbackId 0x0d Reply 0x04
+2013-01-04 15:20:23:959 Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2013-01-04 15:20:23:959 Node002, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2013-01-04 15:20:24:589 Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x0d, 0x01, 0xe5
+2013-01-04 15:20:24:589 Node002,   ZW_SEND_DATA Request with callback ID 0x0d received (expected 0x0d)
+2013-01-04 15:20:24:589 Node002, ERROR: ZW_SEND_DATA failed. No ACK received - device may be asleep.
+2013-01-04 15:20:24:589 Node002,   WARNING: Device is not a sleeping node - retrying the send.
+2013-01-04 15:20:24:590 Node002,   Expected callbackId was received
+2013-01-04 15:20:25:957 Node002, WriteMsg Wait Timeout m_currentMsg=b6e03590
+2013-01-04 15:20:25:957 
+2013-01-04 15:20:25:957 Node002, Sending command (Attempt 2, Callback ID=0x0d, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x25, 0x02, 0x05, 0x0d, 0xca
+2013-01-04 15:20:25:960 Node002,   ACK received CallbackId 0x0d Reply 0x04
+2013-01-04 15:20:25:962 Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2013-01-04 15:20:25:962 Node002, ZW_SEND_DATA delivered to Z-Wave stack
+2013-01-04 15:20:27:711 Node004,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x04, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x11, 0x00, 0x00, 0xeb
+2013-01-04 15:20:27:712 
+2013-01-04 15:20:27:915 Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x0d, 0x01, 0xe5
+2013-01-04 15:20:27:915 Node002,   ZW_SEND_DATA Request with callback ID 0x0d received (expected 0x0d)
+2013-01-04 15:20:27:915 Node002, ERROR: ZW_SEND_DATA failed. No ACK received - device may be asleep.
+2013-01-04 15:20:27:915 Node002,   WARNING: Device is not a sleeping node - retrying the send.
+2013-01-04 15:20:27:915 Node002,   Expected callbackId was received
+2013-01-04 15:20:27:957 Node002, WriteMsg Wait Timeout m_currentMsg=b6e03590
+2013-01-04 15:20:27:957 
+2013-01-04 15:20:27:957 Node002, Sending command (Attempt 3, Callback ID=0x0d, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x25, 0x02, 0x05, 0x0d, 0xca
+2013-01-04 15:20:27:959 Node002,   ACK received CallbackId 0x0d Reply 0x04
+2013-01-04 15:20:27:962 Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2013-01-04 15:20:27:962 Node002, ZW_SEND_DATA delivered to Z-Wave stack
+2013-01-04 15:20:29:958 Node002, WriteMsg Wait Timeout m_currentMsg=b6e03590
+2013-01-04 15:20:29:958 Node002, ERROR: Dropping command, expected response not received after 3 attempt(s)
+2013-01-04 15:20:29:958 Node003, WriteMsg WriteNextMsg m_currentMsg=b6e1a3c8
+2013-01-04 15:20:29:958 
+2013-01-04 15:20:29:958 Node003, Sending command (Callback ID=0x06, Expected Reply=0x04) - SwitchAllCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x27, 0x02, 0x05, 0x06, 0xc2
+2013-01-04 15:20:29:961 Node003,   ACK received CallbackId 0x06 Reply 0x04
+2013-01-04 15:20:29:961 Node003,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2013-01-04 15:20:29:962 Node003, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2013-01-04 15:20:31:863 Node003,   Received: 0x01, 0x05, 0x00, 0x13, 0x06, 0x01, 0xee
+2013-01-04 15:20:31:864 Node003,   ZW_SEND_DATA Request with callback ID 0x06 received (expected 0x06)
+2013-01-04 15:20:31:864 Node003, ERROR: ZW_SEND_DATA failed. No ACK received - device may be asleep.
+2013-01-04 15:20:31:864 Node003,   WARNING: Device is not a sleeping node - retrying the send.
+2013-01-04 15:20:31:864 Node003,   Expected callbackId was received
+2013-01-04 15:20:31:958 Node003, WriteMsg Wait Timeout m_currentMsg=b6e1a3c8
+2013-01-04 15:20:31:958 
+2013-01-04 15:20:31:958 Node003, Sending command (Attempt 2, Callback ID=0x06, Expected Reply=0x04) - SwitchAllCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x27, 0x02, 0x05, 0x06, 0xc2
+2013-01-04 15:20:31:961 Node003,   ACK received CallbackId 0x06 Reply 0x04
+2013-01-04 15:20:31:963 Node003,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2013-01-04 15:20:31:963 Node003, ZW_SEND_DATA delivered to Z-Wave stack
+2013-01-04 15:20:32:904 Node003,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x03, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x04, 0x00, 0x00, 0xf9
+2013-01-04 15:20:32:904 
+2013-01-04 15:20:32:904 Node003, Received Meter report from node 3: Power=4W
+2013-01-04 15:20:32:904 Node003, Refreshed Value: old value=4, new value=4, type=string
+2013-01-04 15:20:32:904 Node003, Changes to this value are not verified
+2013-01-04 15:20:32:990 Node005,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x05, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x00, 0x00, 0x00, 0xfb
+2013-01-04 15:20:32:990 
+2013-01-04 15:20:33:791 Node006,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x06, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x00, 0x00, 0x00, 0xf8
+2013-01-04 15:20:33:791 
+2013-01-04 15:20:33:839 Node007,   Received: 0x01, 0x0e, 0x00, 0x04, 0x00, 0x07, 0x08, 0x32, 0x02, 0x21, 0x12, 0x00, 0x00, 0x00, 0x00, 0xf9
+2013-01-04 15:20:33:839 
+2013-01-04 15:20:33:958 Node003, WriteMsg Wait Timeout m_currentMsg=b6e1a3c8
+2013-01-04 15:20:33:958 
+2013-01-04 15:20:33:958 Node003, Sending command (Attempt 3, Callback ID=0x06, Expected Reply=0x04) - SwitchAllCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x27, 0x02, 0x05, 0x06, 0xc2
+2013-01-04 15:20:33:971 Node003,   ACK received CallbackId 0x06 Reply 0x04
+2013-01-04 15:20:33:971 Node003,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2013-01-04 15:20:33:972 Node003, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2013-01-04 15:20:35:959 Node003, WriteMsg Wait Timeout m_currentMsg=b6e1a3c8
+2013-01-04 15:20:35:959 Node003, ERROR: Dropping command, expected response not received after 3 attempt(s)
+2013-01-04 15:20:35:959 Node003, Query Stage Complete (Session)
+2013-01-04 15:20:35:959 Node003, Queuing Command: Query Stage Complete (ManufacturerSpecific2)
+2013-01-04 15:20:35:959 Node004, Query Stage Complete (ManufacturerSpecific2)
+2013-01-04 15:20:35:960 Node004, Queuing Command: Query Stage Complete (Versions)
+2013-01-04 15:20:35:960 Node004, Query Stage Complete (Versions)
+2013-01-04 15:20:35:960 Node004, QueryStage_Instances
+2013-01-04 15:20:35:960 Node004, Essential node queries are complete
+2013-01-04 15:20:35:960 Node004, QueryStage_Static
+2013-01-04 15:20:35:960 Node004, Queuing command: MeterCmd_SupportedGet (Node=4): 0x01, 0x09, 0x00, 0x13, 0x04, 0x02, 0x32, 0x03, 0x05, 0x0e, 0xd9
+2013-01-04 15:20:35:960 Node004, Queuing command: Get Association Groupings (Node=4): 0x01, 0x09, 0x00, 0x13, 0x04, 0x02, 0x85, 0x05, 0x05, 0x0f, 0x69
+2013-01-04 15:20:35:960 Node004, Queuing command: VersionCmd_Get (Node=4): 0x01, 0x09, 0x00, 0x13, 0x04, 0x02, 0x86, 0x11, 0x05, 0x10, 0x61
+2013-01-04 15:20:35:960 Node004, Queuing Command: Query Stage Complete (Static)
+2013-01-04 15:20:35:960 Node003, WriteMsg WriteNextMsg m_currentMsg=b6e14d20
+2013-01-04 15:20:35:961 
+2013-01-04 15:20:35:961 Node003, Sending command (Callback ID=0x08, Expected Reply=0x04) - ManufacturerSpecificCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x72, 0x04, 0x05, 0x08, 0x9f
+2013-01-04 15:20:35:964 Node003,   ACK received CallbackId 0x08 Reply 0x04
+2013-01-04 15:20:35:965 Node003,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2013-01-04 15:20:35:965 Node003, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2013-01-04 15:20:36:631 Node003,   Received: 0x01, 0x05, 0x00, 0x13, 0x08, 0x01, 0xe0
+2013-01-04 15:20:36:631 Node003,   ZW_SEND_DATA Request with callback ID 0x08 received (expected 0x08)
+2013-01-04 15:20:36:631 Node003, ERROR: ZW_SEND_DATA failed. No ACK received - device may be asleep.
+2013-01-04 15:20:36:632 Node003,   WARNING: Device is not a sleeping node - retrying the send.
+2013-01-04 15:20:36:632 Node003,   Expected callbackId was received
