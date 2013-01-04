@@ -1,3 +1,4 @@
+#!/bin/bash
 while true
 do
 	python create_csv.py&

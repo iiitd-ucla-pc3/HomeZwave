@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /root/HomeZwave/zwave/cpp/examples/linux/MUC; make clean
+cd /root/HomeZwave/zwave/cpp/examples/linux/MUC; make
+

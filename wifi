@@ -1,0 +1,4 @@
+#!/bin/bash
+/root/setup/init_wlan
+iwconfig mlan0 essid NETGEAR
+dhclient mlan0
