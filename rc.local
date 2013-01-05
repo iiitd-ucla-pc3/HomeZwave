@@ -1,0 +1,34 @@
+#!/bin/sh
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+
+service ssh start
+/root/setup/run_setup
+echo "Init Wireless"
+sleep 4
+/root/setup/init_wlan
+echo "Sleeping for 2 seconds"
+sleep 2
+echo "Setting SSID"
+iwconfig mlan0 essid NETGEAR
+sleep 1
+echo "Obtaining IP"
+dhclient mlan0
+echo "Wireless done"
+sleep 1
+echo "Staring Data Collection"
+                                                                        
+/root/HomeZwave/upload_csv.sh &
+echo "Starting upload daemon"
+/root/HomeZwave/run &
+/root/button/mbutton &
+exit 0
